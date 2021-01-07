@@ -1,0 +1,116 @@
+/* 1. Variable */
+
+.thread-container {
+  display: flex;
+}
+
+.thread-container .thread-left .user-avatar {
+  width: 90px;
+  border-radius: 50%;
+}
+
+.thread-container .thread-left .thread-like {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.thread-container .thread-left .thread-like i {
+  font-size: 25px;
+  color: #555555;
+}
+
+.thread-container .thread-left .thread-like p {
+  font-size: 16px;
+}
+
+.thread-container .thread-right {
+  padding-left: 25px;
+}
+
+.thread-container .thread-right .thread-title {
+  color: #303956;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.thread-container .thread-right .thread-info {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.thread-container .thread-right .thread-action {
+  margin-top: 5px;
+}
+
+.thread-container .thread-right .thread-action div:nth-child(1) span {
+  margin-right: 10px;
+}
+
+.thread-container .thread-right .thread-content {
+  margin-top: 30px;
+}
+
+.thread-container .thread-right .answer-container {
+  overflow: auto;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.media-stats a {
+  color: #707c80;
+  text-decoration: none;
+}
+
+.media-right span,
+.media-right a {
+  color: white;
+  padding: 0 3px;
+  font-size: 0.9rem;
+  display: inline-block;
+}
+
+.media-right .category {
+  margin-right: 3px;
+  background-color: #6777ef;
+}
+
+.media-right .solved {
+  background-color: #47c363;
+}
+
+.answer-container {
+  border-bottom: 1px solid #eee;
+}
+
+.answer-container:nth-last-child(1) {
+  border-bottom: none;
+}
+
+.answer-container .media-body .title span:nth-child(1) {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #191d21;
+}
+
+.answer-container .media-body .title span:nth-last-child(1) {
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: #6c757d;
+}
+
+.answer-container .answer-action {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.answer-container .answer-action .answer-like a,
+.answer-container .answer-action .answer-like i {
+  color: #707c80;
+  text-decoration: none;
+  font-size: 1rem;
+}
+

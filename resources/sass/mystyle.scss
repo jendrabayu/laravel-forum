@@ -1,0 +1,137 @@
+/* 1. Variable */
+@import "./stisla/_variable";
+@import "./stisla/functions";
+
+.thread-container {
+    display: flex;
+
+    .thread-left {
+        .user-avatar {
+            width: 90px;
+            border-radius: 50%
+        }
+
+        .thread-like {
+            margin-top: 20px;
+            text-align: center;
+
+            i {
+                font-size: 25px;
+                color: rgb(85, 85, 85);
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .thread-right {
+        padding-left: 25px;
+
+        .thread-title {
+            color: #303956;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .thread-info {
+            margin-top: 5px;
+            display: flex;
+            align-items: center
+        }
+
+        .thread-action {
+            margin-top: 5px;
+        }
+
+        .thread-action div:nth-child(1) span {
+            margin-right: 10px;
+        }
+
+        .thread-content {
+            margin-top: 30px;
+        }
+
+        .answer-container {
+            overflow: auto;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #eee
+        }
+
+    }
+}
+
+
+.media-stats a {
+    color: #707c80;
+    text-decoration: none,
+}
+
+.media-right {
+
+    span,
+    a {
+        color: white;
+        padding: 0 3px;
+        font-size: .9rem;
+        display: inline-block;
+    }
+
+    .category {
+        margin-right: 3px;
+        background-color: color(primary);
+    }
+
+    .solved {
+        background-color: color(success);
+    }
+
+}
+
+.answer-container {
+    border-bottom: 1px solid #eee;
+
+    &:nth-last-child(1) {
+        border-bottom: none;
+    }
+
+    .media-body {
+        .title {
+            span {
+                &:nth-child(1) {
+                    font-size: 1rem;
+                    font-weight: 700;
+                    color: color(dark);
+                }
+
+                &:nth-last-child(1) {
+                    font-size: .8rem;
+                    font-weight: 300;
+                    color: color(font);
+                }
+
+
+
+            }
+        }
+    }
+
+    .answer-action {
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .answer-like {
+
+            a,
+            i {
+                color: #707c80;
+                text-decoration: none;
+                font-size: 1rem;
+            }
+        }
+    }
+}
